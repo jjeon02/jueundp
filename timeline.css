@@ -36,6 +36,8 @@ img{
     grid-template-columns: repeat(100,auto);
 }
 
+/* BLOCK DESIGN */
+
 .block{
     display: inline-block;
     width: auto;
@@ -45,7 +47,6 @@ img{
     padding:4em 2em 2em 1.2em;
 }
 
-/* BLOCK DESIGN */
 .titleblock{
     background-color:black;
     color:white;
@@ -57,9 +58,19 @@ img{
     line-height: 1.2em;
     font-weight:900;
 }
+
 .timeblock{
     width: auto;
     border-left: 2px solid black;
+}
+
+.imgblock{
+    width: 48em;
+    display: inline-block;
+    height:100vh;
+    margin:10;
+    top:0;bottom:0;
+    padding:4em 2em 2em 1.2em;
 }
 
 .blackbg{
@@ -67,11 +78,15 @@ img{
     color:white;
 }
 
+#fleuron{
+    background-color:#76A057;
+}
+
 /* TYPOGRAPHY DESIGN */
 
 .time{
     font-family: 'Playfair Display', serif;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 1.2em;
     text-transform: uppercase;
 }
