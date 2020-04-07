@@ -25,6 +25,25 @@ img{
     color:white;
 }
 
+.titleimg{
+    animation: colchange 4.8s infinite;
+}
+
+@keyframes colchange{
+    0%{
+        background-color: #f2389a;
+    }
+    33%{
+        background-color: #f4f431;
+    }
+    66%{
+        background-color:#2995ed;
+    }
+    100%{
+        background-color: #f2389a;
+    }
+}
+
 .horizontal{
     /* white-space: nowrap; */
     position: fixed;
@@ -52,6 +71,7 @@ img{
     background-color:black;
     color:white;
     padding:3.6em;
+    width:48em;
 }
 
 .title{
