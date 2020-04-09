@@ -1,11 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color:#DDDDDD;
     height:100%;
+    background-color:black;
 }
 img{
     width:100%;
-    /* background-color:#bbbbbb; */
 }
+
 /* NAVIGATION DESIGN */
 .nav{
     position: fixed;
@@ -15,7 +18,7 @@ img{
     top:0;
     left:0;
     padding:1em;
-    z-index:1;
+    z-index:2;
 }
 .navtitle{
     font-family: 'Noto Sans KR', sans-serif;
@@ -26,6 +29,12 @@ img{
 }
 
 .titleimg{
+    width: 96vh;
+    height:96vh;
+    left: 12em;
+}
+
+.gradient{
     animation: colchange 4.8s infinite;
 }
 
@@ -47,15 +56,30 @@ img{
 .horizontal{
     /* white-space: nowrap; */
     position: fixed;
-    width:100vw;
-    height: 100vh;
-    overflow-x:scroll;
-    overflow-y:hidden;
-    top:0;bottom:0;left:0;right:0;
-    display: grid;
-    grid-template-columns: repeat(100,auto);
+    width:100vh;
+    height: 100vw;
+    left:0;
+    top:0;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    transform: rotate(-90deg) translateY(-100vh);
+    transform-origin: right top;
+    z-index: -1;
 }
 
+.outer-block{
+    display: grid;
+    position: fixed;
+    grid-template-columns: repeat(100,auto);
+    width:auto;
+    height:100vh;
+    left:0; right:0; top:0; bottom:0;
+    margin:0vh;
+    padding:0;
+    transform: rotate(90deg) translateX(100vh);
+    transform-origin: right top;
+    z-index: 0;
+}
 /* BLOCK DESIGN */
 
 .block{
@@ -65,20 +89,14 @@ img{
     margin:0;
     top:0;bottom:0;
     padding:3.6em 0em 0em 0em;
+    z-index:1;
 }
 
 .titleblock{
-    background-color:black;
-    color:white;
-    padding:3.6em;
-    width:48em;
-}
-
-.title{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 6em;
-    line-height: 1.2em;
-    font-weight:900;
+    position:fixed;
+    width: 100vw;
+    height:100vh;
+    z-index:-1;
 }
 
 .timeblock{
@@ -89,21 +107,20 @@ img{
 }
 
 .img{
-    width: 36em;
+    height: 60vh;
+    width: 60vh;
     display: inline-block;
     height:100vh;
-    margin:4.8em 2em 4.8em 0em;
-    top:0;bottom:0;
+    margin: 12vh 2em 20vh 2em;
 }
 
 .text{
-    height: 74vh;
-    width: 30em;
+    height: 60vh;
+    width: 60vh;
     overflow-wrap: break-word;
     overflow-y:scroll;
-    margin:4.8em 2em 4.8em 0em;
+    margin: 12vh 2em 20vh 2em;
     padding: 0em 1.2em 3.6em 1.2em;
-    top:0;bottom:0;
     display: inline-block;
     border-radius: .5em;
 }
@@ -133,8 +150,13 @@ img{
     color:white;
 }
 
+.lightbg{
+    background-color:#DDDDDD;
+}
+
 .lightborder{
     border:2px solid #bbbbbb;
+    color:black;
 }
 
 .darkborder{
