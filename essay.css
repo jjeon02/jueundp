@@ -34,7 +34,9 @@ a:hover{
 a:visited{
     color:white;
 }
-
+.link:hover{
+    color:#888;
+}
 
 @keyframes colchange{
     0%{
