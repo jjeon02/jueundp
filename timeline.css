@@ -8,7 +8,19 @@ body{
 img{
     width:100%;
 }
+a{
+    color:white;
+}
+a:hover{
+    cursor: pointer;
+}
+a:visited{
+    color:white;
+}
 
+.link:hover{
+    color:#888;
+}
 /* NAVIGATION DESIGN */
 .nav{
     position: fixed;
@@ -21,11 +33,12 @@ img{
     z-index:2;
 }
 .navtitle{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
     line-height: 1.2em;
     font-weight:500;
     color:white;
+    margin-right:1em;
 }
 
 .titleimg{
