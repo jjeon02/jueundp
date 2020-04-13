@@ -23,8 +23,44 @@ a{
     color:white;
     text-decoration:none;
 }
-
+a:hover{
+    cursor: pointer;
+}
+a:visited{
+    color:white;
+}
+.link{
+    text-decoration:underline;
+}
+.link:hover{
+    color:#888;
+}
+.internal{
+    text-decoration:none;  
+}
+.internal:hover{
+    color:#888;
+}   
 .nav{
+    position: fixed;
+    width:100%;
+    height:auto;
+    background-color:black;
+    top:0;
+    left:0;
+    padding:1em;
+    z-index:2;
+}
+.navtitle{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight:500;
+    color:white;
+    margin-right:1em;
+}
+
+.navtwo{
     left:0;
     width:24%;
     position: fixed;
