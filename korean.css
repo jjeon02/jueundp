@@ -102,11 +102,22 @@ a:visited{
     color:white;
     overflow:hidden;
 }
+.sentence{
+    padding:2em;
+    padding: 23% 1em 22% 1em;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 2.2vw;
+    line-height: 1.2em;
+    font-weight:400;
+    text-align:center;
+    color:white;
+    overflow:hidden;
+}
 
 /* FONT */
 
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gothic A1', sans-serif;
     font-size: 2.4em;
     line-height: 1.2em;
     top:0;
