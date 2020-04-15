@@ -16,6 +16,7 @@ img{
     left:0;
     padding:1em;
     z-index:2;
+    border-bottom: 2px solid white;
 }
 .navtitle{
     font-family: 'Gothic A1', sans-serif;
@@ -54,21 +55,83 @@ a:visited{
 }
 
 /* BLOCK DESIGN */
-
-.title{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 5.4em;
-    line-height: 1.2em;
-    font-weight:900;
-    margin:auto;
-    text-align:center;
-    color:white;
-}
-/* TYPOGRAPHY DESIGN */
 .content{
     width:90%;
-    margin:12em auto 12em auto;
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    margin:auto;
 }
+.block{
+    display:inline-block;
+    width:100%;
+    height:45vw;
+    border: 2px solid white;
+}
+.text{
+    padding:2em;
+    overflow:scroll;
+}
+.scroll{
+    overflow:scroll;
+}
+
+.imgbox{
+    width: 100%;
+    height:100%;
+    margin:0;
+}
+#imgone{
+    background: url("sketch-02.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#imgtwo{
+    background: url("sketch-06.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#imgthree{
+    background: url("sketch-08.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* TYPOGRAPHY DESIGN */
+
+.title{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 3.6em;
+    text-transform:uppercase;
+    line-height: 1.2em;
+    top:0;
+    margin:auto;
+    color:white;
+    animation: colchange 7.2s infinite;
+    width:90%;
+}
+
+@keyframes colchange{
+    0%{
+        color: #f2389a;
+    }
+    33%{
+        color: #f4f431;
+    }
+    66%{
+       color:#2995ed;
+    }
+    100%{
+        color: #f2389a;
+    }
+}
+
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 2.4em;
@@ -111,38 +174,9 @@ h3{
 }
 
 .indent{
-    padding: 0em 10em 0em 30em;
-}
-.imgbox{
-    width: 100vw;
-    height:60em;
-    margin:0;
-    left:0;
-    right:0;
-}
-#imgone{
-    background: url("sketch/sketch-02.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    padding: 0em 2em 0em 2em;
 }
 
-#imgtwo{
-    background: url("sketch-06.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#imgthree{
-    background: url("sketch-08.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 /* SCROLLBAR DESIGN */
 ::-webkit-scrollbar{

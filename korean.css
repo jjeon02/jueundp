@@ -117,18 +117,37 @@ a:visited{
 /* FONT */
 
 h1{
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 2.4em;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 3.6em;
+    text-transform:uppercase;
     line-height: 1.2em;
     top:0;
     margin-top:0em;
     padding-top:0;
     color:white;
+    animation: colchange 7.2s infinite;
+}
+
+
+@keyframes colchange{
+    0%{
+        color: #f2389a;
+    }
+    33%{
+        color: #f4f431;
+    }
+    66%{
+       color:#2995ed;
+    }
+    100%{
+        color: #f2389a;
+    }
 }
 
 h2{
     font-family: 'Gothic A1', sans-serif;
-    font-size: 2.4em;
+    text-transform:uppercase;
+    font-size: 1.8em;
     line-height: 1.8em;
     top:0;
     margin:0;
