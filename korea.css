@@ -33,22 +33,31 @@ p{
     color:white;
 }
 
-a{
-    color:white;
-}
+/* Link Settings */
 a:hover{
     cursor: pointer;
 }
 a:visited{
     color:white;
 }
-
+.link{
+    color:#888;
+}
 .link:hover{
+    color:white;
+}
+.link:visited{
     color:#888;
 }
 
-img{
-    width:100%;
+.been{
+    color:white;
+}
+.been:hover{
+    color:white;
+}
+.been:visited{
+    color:white;
 }
 
 /* Classes */

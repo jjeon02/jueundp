@@ -7,19 +7,34 @@ body{
 img{
     width:100%;
 }
-a{
-    color:white;
-}
+
 a:hover{
     cursor: pointer;
 }
 a:visited{
     color:white;
 }
-
-.link:hover{
+.link{
     color:#888;
 }
+.link:hover{
+    color:white;
+}
+.link:visited{
+    color:#888;
+}
+
+.been{
+    color:white;
+}
+.been:hover{
+    color:white;
+}
+.been:visited{
+    color:white;
+}
+
+
 .nav{
     position: fixed;
     width:100%;
@@ -126,6 +141,7 @@ h1{
     padding-top:0;
     color:white;
     animation: colchange 7.2s infinite;
+    font-weight:700;
 }
 
 

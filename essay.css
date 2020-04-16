@@ -26,17 +26,31 @@ img{
     color:white;
     margin-right:1em;
 }
-a{
-    color:white;
-}
+/* Link Settings */
 a:hover{
     cursor: pointer;
 }
 a:visited{
     color:white;
 }
-.link:hover{
+.link{
     color:#888;
+}
+.link:hover{
+    color:white;
+}
+.link:visited{
+    color:#888;
+}
+
+.been{
+    color:white;
+}
+.been:hover{
+    color:white;
+}
+.been:visited{
+    color:white;
 }
 
 @keyframes colchange{
@@ -115,6 +129,7 @@ a:visited{
     color:white;
     animation: colchange 7.2s infinite;
     width:90%;
+    font-weight:700;
 }
 
 @keyframes colchange{
