@@ -1,86 +1,6 @@
 body{
     background: #000000;
 }
-h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4em;
-    line-height: 1.2em;
-    top:0;
-    margin-top:0em;
-    padding-top:0;
-    color:white;
-}
-
-h2{
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 2.4em;
-    line-height: 1.2em;
-    top:0;
-    margin:0 ;
-    padding:0;
-    color:white;
-}
-
-p{
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 1.4em;
-    line-height: 1.6em;
-    font-weight:400;
-    padding:0;
-    margin:0;
-    hyphens:auto;
-    text-align:left;
-    color:white;
-}
-
-/* Link Settings */
-a:hover{
-    cursor: pointer;
-}
-a:visited{
-    color:white;
-}
-.link{
-    color:#888;
-}
-.link:hover{
-    color:white;
-}
-.link:visited{
-    color:#888;
-}
-
-.been{
-    color:white;
-}
-.been:hover{
-    color:white;
-}
-.been:visited{
-    color:white;
-}
-
-/* Classes */
-
-.nav{
-    position: fixed;
-    width:100%;
-    height:auto;
-    background-color:black;
-    top:0;
-    left:0;
-    padding:1em;
-    z-index:2;
-}
-.navtitle{
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    font-weight:500;
-    color:white;
-    margin-right:1em;
-}
-
 
 .grid{
     display:grid;
@@ -94,12 +14,6 @@ a:visited{
 }
 .title{
     width: 90%;
-    text-transform:uppercase;
-
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 1.4em;
-    line-height: 1.6em;
-    font-weight:400;
     padding:0;
     margin:20px auto 20px auto;
     hyphens:auto;
