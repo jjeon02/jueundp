@@ -119,4 +119,7 @@ p{
     hyphens:auto;
     text-align:left;
     color:white;
+    -ms-hyphenate-limit-chars: 8 4 4;
+    -webkit-hyphenate-limit-before: 4; 
+    -webkit-hyphenate-limit-after: 4;
 }

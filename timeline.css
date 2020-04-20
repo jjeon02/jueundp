@@ -5,14 +5,14 @@
 }
 
 .titleimg{
-    margin-top: 2vh;
+    margin-top: 10vh;
     margin-bottom: 2vh;
     width: 96vh;
     height:100vh;
     left: 12em;
 }
+
 .gradient{
-    position:fixed;
     width: 100vw;
     height:100vh;
     animation: colchange 7.2s infinite;
@@ -76,6 +76,13 @@
     color:white;
 }
 
+.explain{
+    width: 36vh;
+    height: 100vh;
+    border-left: 2px solid white;
+    padding: 3.6em 1.2em 0em 1.2em;
+}
+
 .timeblock{
     height: 100vh;
     width: auto;
@@ -84,19 +91,20 @@
 }
 
 .img{
-    height: 60vh;
-    width: 60vh;
+    height: 72vh;
+    width: 72vh;
     display: inline-block;
-    margin: 14vh 2em 20vh 2em;
+    margin: 10vh 2em auto 2em;
     border-radius: .5em;
+    overflow:hidden;
 }
 
 .text{
-    height: 60vh;
-    width: 60vh;
+    height: 72vh;
+    width: 72vh;
     overflow-wrap: break-word;
     overflow-y:scroll;
-    margin: 14vh 2em 20vh 2em;
+    margin: 10vh 2em auto 2em;
     display: inline-block;
     border-radius: .5em;
     border:2px solid #888;
