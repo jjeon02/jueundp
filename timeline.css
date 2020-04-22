@@ -35,17 +35,18 @@
 }
 
 .horizontal{
-    /* white-space: nowrap; */
-    position: fixed;
+    position: absolute;
     width:100vh;
     height: 100vw;
     left:0;
     top:0;
-    overflow-x:hidden;
-    overflow-y:scroll;
     transform: rotate(-90deg) translateY(-100vh);
     transform-origin: right top;
     z-index: 2;
+    overflow-x:hidden;
+    overflow-y:scroll; 
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style:none;
 }
 
 .outer-block{
@@ -79,14 +80,14 @@
 .explain{
     width: 36vh;
     height: 100vh;
-    border-left: 2px solid white;
+    border-left: 1px dotted white;
     padding: 3.6em 1.2em 0em 1.2em;
 }
 
 .timeblock{
     height: 100vh;
     width: auto;
-    border-left: 2px solid white;
+    border-left: 1px dotted white;
     padding: 3.6em 1.2em 0em 1.2em;
 }
 
@@ -95,7 +96,6 @@
     width: 72vh;
     display: inline-block;
     margin: 10vh 2em auto 2em;
-    border-radius: .5em;
     overflow:hidden;
 }
 
@@ -106,7 +106,6 @@
     overflow-y:scroll;
     margin: 10vh 2em auto 2em;
     display: inline-block;
-    border-radius: .5em;
     /* border:2px solid #888; */
 }
 
@@ -124,14 +123,14 @@
 }
 
 .text::-webkit-scrollbar-thumb{
-    background-color:#888;
+    background-color:#666;
     border-radius: .5em;
     width:1em;
     border:none;
 }
 
 .text::-webkit-scrollbar-thumb:hover{
-    background: white;
+    background: #888;
 }
 
 

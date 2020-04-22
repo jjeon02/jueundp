@@ -17,6 +17,7 @@
     height:22.5vw;
     border: 2px solid white;
 }
+
 .textbox{
     padding:2em;
     overflow:scroll;
@@ -87,6 +88,66 @@
     display:none;
 }
 
+/* KOREAN ALPHABET */
+
+.letter-horizontal{
+    width: 90%;
+    display:inline-block;
+    margin: auto 5% auto 5%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.letter-grid{
+    width:auto;
+    display:grid;
+    grid-template-columns: repeat(100,auto);
+}
+.letter-box{
+    display:grid;
+    width: 24em;
+    height: 24em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    border: 1px solid white;
+}
+
+.con{
+    display:inline-block;
+    overflow: hidden;
+    position:relative;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight:900;
+    width:100%;
+    color:#ee3d96;
+    border-bottom: 1px dotted white;
+}
+
+.vowel{
+    display:inline-block;
+    overflow: hidden;
+    position:relative;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 2.4em;
+    line-height: 2.4em;
+    font-weight:900;
+    width:100%;
+    color:#4990cd;
+    border-bottom: 1px dotted white;
+}
+.pronounce{
+    display:inline-block;
+    font-family: 'Gothic A1', sans-serif;
+    overflow: hidden;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight:900;
+    width:100%;
+    color:white;
+    border-bottom: 1px dotted white;
+}
 
 
 @media only screen and (min-width: 501px) and (max-width:960px){

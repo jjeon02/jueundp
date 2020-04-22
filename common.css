@@ -14,6 +14,7 @@ a:visited{
 }
 .link{
     color:#888;
+    cursor: pointer;
 }
 .link:hover{
     color:white;
@@ -23,6 +24,7 @@ a:visited{
 }
 .been{
     color:white;
+    cursor: pointer;
 }
 .been:hover{
     color:white;
@@ -30,6 +32,16 @@ a:visited{
 .been:visited{
     color:white;
 }
+
+@keyframes greychange{
+    0%{
+        color:#888;
+    }
+    100%{
+        color:White;
+    }
+}
+
 /* IMG */
 img{
     width:100%;
@@ -44,16 +56,18 @@ img{
     left:0;
     padding:1em;
     z-index:5;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 .navtitle{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
     line-height: 1.2em;
     font-weight:500;
-    color:white;
+    /* color:white; */
     margin-right:1em;
+    animation: greychange 1s ease-in;
 }
+
 /* TYPE */
 h1{
     font-family: 'Gothic A1', sans-serif;
@@ -68,6 +82,7 @@ h1{
     animation: colchange 7.2s infinite;
     font-weight:700;
 }
+
 @keyframes colchange{
     0%{
         color: #f2389a;
@@ -112,13 +127,13 @@ h4{
 p{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1.4em;
-    line-height: 1.6em;
-    font-weight:300;
+    line-height: 1.4em;
+    font-weight:200;
     padding:0;
     margin:0;
     hyphens:auto;
     text-align:left;
-    color:white;
+    color:#999;
     -ms-hyphenate-limit-chars: 8 4 4;
     -webkit-hyphenate-limit-before: 4; 
     -webkit-hyphenate-limit-after: 4;
