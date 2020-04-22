@@ -22,6 +22,7 @@
     padding:2em;
     overflow:scroll;
 }
+
 .abox{
     padding: 22% 1em 22% 1.4em;
     overflow:hidden;
@@ -90,23 +91,25 @@
 
 /* KOREAN ALPHABET */
 
-.letter-horizontal{
-    width: 90%;
+.horizontal{
+    width: 95%;
     display:inline-block;
-    margin: auto 5% auto 5%;
+    margin: auto 0 auto 5%;
+    right:0;
     overflow-y: hidden;
     overflow-x: scroll;
 }
 
-.letter-grid{
+.scroll-grid{
     width:auto;
     display:grid;
-    grid-template-columns: repeat(100,auto);
+    grid-template-columns: repeat(4,auto);
 }
+
 .letter-box{
     display:grid;
-    width: 24em;
-    height: 24em;
+    width: 22.5vw;
+    height: 22.5vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5,1fr);
     border: 1px solid white;
@@ -118,8 +121,8 @@
     position:relative;
     font-family: 'Gothic A1', sans-serif;
     font-size: 2em;
-    line-height: 2em;
-    font-weight:900;
+    line-height: 2.6em;
+    font-weight:800;
     width:100%;
     color:#ee3d96;
     border-bottom: 1px dotted white;
@@ -130,9 +133,9 @@
     overflow: hidden;
     position:relative;
     font-family: 'Gothic A1', sans-serif;
-    font-size: 2.4em;
-    line-height: 2.4em;
-    font-weight:900;
+    font-size: 2em;
+    line-height: 2.6em;
+    font-weight:800;
     width:100%;
     color:#4990cd;
     border-bottom: 1px dotted white;
@@ -141,12 +144,16 @@
     display:inline-block;
     font-family: 'Gothic A1', sans-serif;
     overflow: hidden;
-    font-size: 2em;
-    line-height: 2em;
-    font-weight:900;
+    font-size: 1.8em;
+    line-height: 2.6em;
+    font-weight:800;
     width:100%;
     color:white;
     border-bottom: 1px dotted white;
+}
+
+.inside{
+    padding-left: .8em;
 }
 
 
