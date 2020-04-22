@@ -91,41 +91,35 @@
 
 /* KOREAN ALPHABET */
 
-.horizontal{
-    width: 95%;
-    display:inline-block;
-    margin: auto 0 auto 5%;
-    right:0;
-    overflow-y: hidden;
-    overflow-x: scroll;
-}
-
-.scroll-grid{
-    width:auto;
-    display:grid;
-    grid-template-columns: repeat(4,auto);
-}
-
 .letter-box{
-    display:grid;
+    display:flex;
+    flex-wrap:wrap;
     width: 22.5vw;
     height: 22.5vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
     border: 1px solid white;
+    overflow:scroll;
+}
+
+.alphabet{
+    display: flex;
+    width: 22.5vw;
+    height: 4.45vw;
+    overflow:hidden;
+}
+
+.border{
+    border-bottom: 1px dotted white;
 }
 
 .con{
     display:inline-block;
-    overflow: hidden;
-    position:relative;
     font-family: 'Gothic A1', sans-serif;
-    font-size: 2em;
-    line-height: 2.6em;
-    font-weight:800;
+    font-size: 1.6vw;
+    line-height: 4.8vw;
+    font-weight:600;
     width:100%;
     color:#ee3d96;
-    border-bottom: 1px dotted white;
+    padding-left:1.2em;
 }
 
 .vowel{
@@ -133,29 +127,25 @@
     overflow: hidden;
     position:relative;
     font-family: 'Gothic A1', sans-serif;
-    font-size: 2em;
-    line-height: 2.6em;
-    font-weight:800;
+    font-size: 1.6vw;
+    line-height: 4.8vw;
+    font-weight:600;
     width:100%;
     color:#4990cd;
-    border-bottom: 1px dotted white;
+    padding-left:1.2em;
 }
-.pronounce{
+
+.pro{
     display:inline-block;
     font-family: 'Gothic A1', sans-serif;
     overflow: hidden;
-    font-size: 1.8em;
-    line-height: 2.6em;
-    font-weight:800;
+    font-size: 1.6vw;
+    line-height: 4.8vw;
+    font-weight:600;
     width:100%;
-    color:white;
-    border-bottom: 1px dotted white;
-}
+    color:#f0ea3d;
 
-.inside{
-    padding-left: .8em;
 }
-
 
 @media only screen and (min-width: 501px) and (max-width:960px){
     .grid{
@@ -192,7 +182,7 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+/* @media only screen and (max-width: 500px){
     .grid{
         display:grid;
         grid-template-columns: 1fr;
@@ -224,4 +214,4 @@
         padding: 36% 1em 22% 1em;
         font-size: 24vw;
     }
-}
+} */
