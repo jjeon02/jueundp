@@ -3,9 +3,11 @@ body{
     scroll-behavior:smooth;
     background-color:black;
 }
+
 img{
     width:100%;
 }
+
 /* LINKS */
 a{
     text-decoration: none; 
@@ -13,13 +15,14 @@ a{
 a:hover{
     cursor: pointer;
 }
+
 a:visited{
     color:white;
 }
 .link{
     color:#888;
     cursor: pointer;
-    text-decoration: none; 
+    text-decoration: none;
 }
 .link:hover{
     animation: colchange 2s infinite;
@@ -27,7 +30,6 @@ a:visited{
 .link:visited{
     color:#888;
 }
-
 .been{
     color:white;
     cursor: pointer;
@@ -58,21 +60,13 @@ a:visited{
         color: #f2389a;
     }
 }
+
 /* NAVIGATION */
 .nav{
-    position: fixed;
-    width:100%;
-    height:1.1em;
-    background-color:black;
     top:0;
-    left:0;
-    padding:.8em;
-    z-index:5;
     border-bottom: 1px solid #bbb;
     display:grid;
-    grid-template-columns: auto auto;
-    color:white;
-    overflow-x:scroll;
+    grid-template-columns: auto auto;   
 }
 
 .navtitle{
@@ -81,6 +75,24 @@ a:visited{
     line-height: 1.1em;
     font-weight:300;
     display:flex;
+}
+
+.nav-bottom{ 
+    width:100%;
+    bottom:0;   
+    border-top: 1px solid #bbb;
+}
+
+.nav, .nav-bottom{
+    overflow-x:scroll;
+    width:100%;
+    height:1.1em;
+    position: fixed;
+    left:0;
+    padding:.8em;
+    color:white;
+    z-index:5;
+    background-color:black;
 }
 
 #go-to{
@@ -101,21 +113,6 @@ a:visited{
     overflow:hidden;
 }
 
-.nav-bottom{
-    position: fixed;
-    width:100%;
-    height:1.1em;
-    background-color:black;
-    bottom:0;
-    padding:.8em;
-    z-index:5;
-    border-top: 1px solid #bbb;
-    display:grid;
-    grid-template-columns: auto auto;
-    color:white;
-}
-
-
 /* HORIZONTAL STRUCTURE */
 
 #container {
@@ -127,21 +124,74 @@ a:visited{
     transform-origin: top left;
     border-left:#999 solid;
     position:absolute;
-    width:100vh;
-    height:100vw;
+    scroll-behavior: smooth;
+    box-sizing: border-box; /*includes padding in height and makes sure there is no overlap with nav*/
 }
 
-#container2 {
-    width: 100vw;
-    height: 100vh;
+#container2{
+    width:auto;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     display:grid;
     grid-template-columns: repeat(100,auto);
+    z-index: 4;
+}
+
+#container, #container2{
+    width:100vh;
+    height:100vw;
+    top:0;bottom:0;left:0;right:0;
+}   
+
+.squarebox{
+    padding: 14vh 1.2em 14vh 1.2em;
+    width: auto;
+    display:inline-block;
+    background-color:black;
+}
+
+/* ESSAY */
+.essayheading{
+    width: 100vh;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+
+.gap{
+    width:48vh;
+}
+
+.gap, .essayheading {
+    position:relative;
+    display:inline-block;
+    height:100vh;
+    white-space:normal;
+    overflow-y:hidden;
+    padding: 4.8em 1.2em 1.2em 1.2em;
+    background-color:black;
+}
+
+.imgone{
+    background: url("essay/sketch-02.jpg") no-repeat center;
+}
+
+.imgtwo{
+    background: url("essay/sketch-06.jpg") no-repeat center;
+}
+
+.imgthree{
+    background: url("essay/sketch-08.jpg") no-repeat center;
+}
+.imgone, .imgtwo, .imgthree {
+    -webkit-background-size: 100% 100%;
+	-moz-background-size:  100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 
 /* SKETCH STRUCTURE*/
-.sketch-subtitle{
+
+.sketchsubtitle{
     width: 24vh;
     height:100vh;
     display:inline-block;
@@ -153,20 +203,22 @@ a:visited{
     background-color:black;
 }
 
-.sketch-box{
+.sketchbox{
     padding: 14vh 1.2em 14vh 1.2em;
-    width:auto;
+    height:100vh;
+    width: auto;
+    box-sizing: border-box;
     display:inline-block;
     background-color:black;
 }
 
-.sketch-img{
-    display:inline-block;
-    width: auto;
+.sketchimg{
+    width: 100vh;
     height:100%;
+    display:inline-block;
 }
 
-.digital-grid{
+.digitalgrid{
     display:grid;
     height:72vh;
     width: auto;
@@ -174,29 +226,39 @@ a:visited{
     grid-gap:1em;
 }
 
-.digital-img{
-    display:inline-block;
+.digitalimg{
     width:36vh;
     height:36vh;
-    border: 1px solid  #444;
 }
-.final-img{
-    display:inline-block;
+
+.finalimg{
     width:auto;
     height:35vh;
+}
+
+.digitalimg, .finalimg{
     border: 1px solid  #444;
 }
 
+
+
 /* TIMELINE STRUCTURE */
-#timeline-title{
+
+#timelinetitle{
     width: 100vh;
     height:100vh;
-    position:absolute;
-    z-index: 3;
+    z-index:-1;
+    position:fixed;
+    background-color:black;
+}
+
+#titleimg{
+    margin: 10vh 0 10vh 0 ;
 }
 
 #empty{
-    width: 30vw;
+    left:0;
+    width: 100vh;
     height: 100vh;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
@@ -206,47 +268,41 @@ a:visited{
 }
 
 .explain{
-    width: 36vh;
-    height:100vh;
-    display:inline-block;
-    position:relative;
-    white-space:normal;
-    overflow-y:hidden;
-    padding: 4.2em 12em 1.2em 1.2em;
-    border-left: 1px dashed white;
-    background-color:black;
+    width: 36vh;   
+    border-left: 1px dashed #444;
 }
 .time{
-    width: 14vh;
-    height:100vh;
-    display:inline-block;
-    position:relative;
-    white-space:normal;
-    overflow-y:hidden;
-    padding: 4.2em 1.2em 1.2em 1.2em;
+    width: 12vh;
     border-left: 1px dashed #444;
-    background-color:black;
 }    
-
-.square-box{
-    padding: 14vh 1.2em 14vh 1.2em;
-    width: calc(72vh+2.4em);
-    display:inline-block;
+.space{
+    width: 12vh;
     background-color:black;
 }
+
+.explain, .time, .space{
+    position:relative;
+    display:inline-block;
+    height:100vh;
+    white-space:normal;
+    overflow-y:hidden;
+    padding: 4.8em 1.2em 1.2em 1.2em;
+    background-color:black;
+}
+
+
 
 .img{
     width:72vh;
     height:72vh;
-    background-color: #444;
 }
 
 .text{
-    width:42vh;
+    width:36vh;
     height:72vh;
     overflow:scroll;
-    margin-right: 18em;
 }
+
 ::-webkit-scrollbar{
     display:none;
 }
@@ -254,61 +310,59 @@ a:visited{
 /* FONT */
 
 h1{
-    font-family: 'dpfont';
-    letter-spacing: .05em;
     font-size: 1.6em;
     line-height: 1.2em;
-    top:0;
-    margin:0;
-    padding:0;
     color:white;
 }
 
 h2{
-    font-family: 'dpfont';
-    letter-spacing: .05em;
     font-size: 1.6em;
     line-height: 1.2em;
+    color:#999;
+}
+
+h1, h2{
+    font-family: 'dpfont';
+    letter-spacing: .05em;
     top:0;
     margin:0;
     padding:0;
-    color:#999;
 }
 
 h3{
-    font-family: 'Gothic A1', sans-serif;
     font-size: 1.8em;
-    line-height: 1.8em;
-    font-weight:bold;
-    padding:0;
-    margin:0;
+    line-height: 1.4em;
+    font-weight:600;
     color:white;
 }
 
-h4{
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.4em;
+h4{   
     font-weight:600;
-    padding:0;
-    margin:0;
-    color:#bbb;  
+    color:#bbb; 
 }
 
-p{
-    font-family: 'Gothic A1', sans-serif;
+p{ 
+    font-weight:200;
+    color:#999;
+}
+
+.indent{
+    padding: 0em 1.2em 0em 1.2em;
+}
+
+
+h4, p{
     font-size: 1.2em;
     line-height: 1.4em;
-    font-weight:200;
+}
+
+h3, h4, p{
+    font-family: 'Gothic A1', sans-serif;
     padding:0;
     margin:0;
-    hyphens:auto;
-    text-align:left;
-    color:#999;
-    -ms-hyphenate-limit-chars: 8 4 4;
-    -webkit-hyphenate-limit-before: 4; 
-    -webkit-hyphenate-limit-after: 4;
 }
+
+
 @font-face{
     font-family: dpfont;
     src: url(dpfont.ttf);
@@ -320,6 +374,24 @@ p{
         width:48vh;
         height:72vh;
         overflow:scroll;
-        margin-right: 12em;
     }
-}
+    .squarebox{
+        padding: 12vh .6em 8vh .6em;
+        width: auto;
+        display:inline-block;
+        background-color:black;
+    }
+    .img{
+        width:76vh;
+        height:76vh;
+    }
+    p, h4{
+        font-size: 1.1em;
+    }
+
+    .text{
+        width:84vw;
+        height:76vh;
+        overflow:scroll;
+    }
+}   
