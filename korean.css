@@ -1,6 +1,13 @@
+.koreansquare{
+    padding: 10vh 1.2em 1vh 1.2em;
+    width: auto;
+    display:inline-block;
+    background-color:black;
+}
+
 .koreangrid{
-    width:72vh;
-    height:72vh;
+    min-width:80vh;
+    height:80vh;
     display:grid;
     grid-template-columns: 1fr 1fr;
     z-index: 5;
@@ -9,11 +16,12 @@
 }
 
 .box{
-    border: 1px solid #bbb;
+    border: 1px solid #444;
 }
 
 .captionbox{
     padding: 0 1.2em 0 1.2em;
+    overflow: auto;
 }
 
 .box, .captionbox{
@@ -34,6 +42,8 @@
     padding: 4.8em 1.2em 1.2em 1.2em;
     background-color:black;
 }
+
+
 
 h5{
     font-weight:600;

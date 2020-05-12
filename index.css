@@ -26,8 +26,12 @@
 }
 
 .button{
-    width: 90vw;
-    margin: 2em 5vw 4em 5vw;
+    width: 60vw;
+    min-height:30vw;
+    float:right;
+    box-sizing:border-box;
+    margin: 2em 5vw 2em auto;
+    padding: 1.2em;
     border: 1px solid #ddd;
     color:white;
     text-align:center;
