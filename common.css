@@ -35,6 +35,10 @@ a:visited{
 .link:visited{
     color:#666;
 }
+.link:active{
+    color:white;
+}
+
 .been{
     color:white;
     cursor: pointer;
