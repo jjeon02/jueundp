@@ -185,7 +185,7 @@ h1, h2, h3, h4, p, li{
     margin:0;
 }
 
-h4, p{
+h4, p, li{
     font-size: 1.2em;
     line-height: 1.4em;
 }
@@ -233,7 +233,7 @@ h4, p{
     #empty{
         left:0;
         width: 100vh;
-        height: 100vh;
+        height: 112vh;
         transform: rotate(90deg) translateY(-100vh);
         transform-origin: top left;
     }
@@ -297,7 +297,7 @@ h4, p{
     /* TIMELINE STRUCTURE */
     
     #timelinetitle{
-        width: 100vh;
+        width: 108vh;
         height:100vh;
         z-index:-1;
         position:fixed;
@@ -305,7 +305,7 @@ h4, p{
     }
     
     #titleimg{
-        margin: 10vh 0 10vh 0 ;
+        margin: 11vh 2vh 11vh 2vh;
     }
     
     .explain{
@@ -369,7 +369,7 @@ h4, p{
     #empty{
         left:0;
         width: 100vw;
-        height: 100vw;
+        height: 96vw;
     }
 
     .squarebox{
@@ -436,7 +436,7 @@ h4, p{
     
     #timelinetitle{
         width: 100vw;
-        height:100vw;
+        height:96vw;
         z-index:-1;
         position:fixed;
         left:0;
@@ -449,8 +449,9 @@ h4, p{
     
     .explain{
         width: 100vw; 
-        height: 100vw;
+        height: 200vw;
         border-top: 1px dashed #444;
+        display: inline-block;
     }
 
     .time{
@@ -459,6 +460,7 @@ h4, p{
         padding: 0 12vw 0 12vw;
         border-top: 1px dashed #444;
     }    
+
     .space{
         width: 100vw;
         height: 1vw;

@@ -5,7 +5,7 @@
 }
 
 .slideimg{
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -19,7 +19,7 @@
 
 .left,.right{
     width: 60vw;
-    min-height:30vw;
+    height:auto;
     border: 1px dashed #444;
     box-sizing:border-box;
     padding: 1.2em;
@@ -78,7 +78,15 @@
 
 @media only screen and (max-width:600px){
     .left, .right{
-        width: 96vw;
+        width: 84vw;
+        margin: 8vw;
         padding: 1.2em;
+    }
+
+    .button{
+        width: 84vw;
+        min-height:30vw;
+        margin: 8vw;
+        float:center;
     }
 }
