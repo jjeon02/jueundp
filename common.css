@@ -57,14 +57,11 @@ a:visited{
     0%{
         color: #f2389a;
     }
-    25%{
+    33.3%{
         color: #f4f431;
     }
-    50%{
+    66.6%{
        color:#2995ed;
-    }
-    75%{
-        color:#64ff00;
     }
     100%{
         color: #f2389a;
@@ -76,7 +73,7 @@ a:visited{
     top:0;
     border-bottom: 1px solid #666;
     display:inline-block;
-    grid-template-columns: auto auto;   
+    grid-template-columns: auto auto;
     overflow-x: scroll;
 }
 
@@ -88,6 +85,7 @@ a:visited{
     margin-right:.4em;
     display: inline-block;
 }
+
 .navspace{
     display: inline-block;
     color:black;
@@ -198,7 +196,7 @@ h4, p, li{
     display:none;
 }
 
-@media only screen and (min-width: 541px){
+@media only screen and (min-width: 600px){
 
     /* HORIZONTAL STRUCTURE */
     
@@ -229,14 +227,6 @@ h4, p, li{
         height:100vw;
         top:0;bottom:0;left:0;right:0;
     }   
-    
-    #empty{
-        left:0;
-        width: 100vh;
-        height: 112vh;
-        transform: rotate(90deg) translateY(-100vh);
-        transform-origin: top left;
-    }
 
     .squarebox{
         padding: 14vh 1.2em 14vh 1.2em;
@@ -297,7 +287,7 @@ h4, p, li{
     /* TIMELINE STRUCTURE */
     
     #timelinetitle{
-        width: 108vh;
+        width: 120vh;
         height:100vh;
         z-index:-1;
         position:fixed;
@@ -305,7 +295,15 @@ h4, p, li{
     }
     
     #titleimg{
-        margin: 11vh 2vh 11vh 2vh;
+        margin: 4vh 2vh 4vh 2vh;
+    }
+    
+    #empty{
+        left:0;
+        width: 100vh;
+        height: 124vh;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
     }
     
     .explain{
@@ -333,10 +331,24 @@ h4, p, li{
         padding: 4.8em 1.2em 1.2em 1.2em;
         background-color:black;
     }
+
+    /* ARROW */
+    .arrow{
+        width: 72%;
+        margin: .6em auto auto 0;
+        box-sizing:border-box;
+    }
+    #vertical{
+        display:none;
+    }
+
+    #horizontal{
+        bottom: 1.2em;
+    }
     
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 
     /* HORIZONTAL STRUCTURE */
     
@@ -366,12 +378,6 @@ h4, p, li{
         top:0;bottom:0;left:0;right:0;
     }  
     
-    #empty{
-        left:0;
-        width: 100vw;
-        height: 96vw;
-    }
-
     .squarebox{
         box-sizing:border-box;
         padding: 0em;
@@ -444,9 +450,15 @@ h4, p, li{
     }
     
     #titleimg{
-        margin: 10vh 0 10vh 0 ;
+        margin: 6vh 0 6vh 0 ;
     }
-    
+
+    #empty{
+        left:0;
+        width: 100vw;
+        height: 96vw;
+    }
+
     .explain{
         width: 100vw; 
         height: 200vw;
@@ -477,5 +489,14 @@ h4, p, li{
         background-color:black;
     }
     
-
+    /* ARROW */
+    .arrow{
+        width: 72%;
+        height: 72%;
+        margin:.6em auto auto auto;
+        box-sizing:border-box;
+    }
+    #horizontal{
+        display:none;
+    }
 }   
