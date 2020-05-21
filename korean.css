@@ -38,6 +38,10 @@ h5, h6{
         grid-gap:.4em;
     }
 
+    .sentenceimg{
+        width:80vh;
+    }
+
     .koreantitle{
         width: 48vh; 
         height:100vh; 
