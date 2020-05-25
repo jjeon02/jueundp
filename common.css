@@ -248,7 +248,7 @@ h4, p, li{
     /* ESSAY */
     .essayheading{
         width: 100vh;
-        border: 1px dashed #444;
+        border: 1px dashed #666;
         box-sizing: border-box;
     }
     
@@ -309,13 +309,13 @@ h4, p, li{
     .explain{
         width: 48vh; 
         height:100vh; 
-        border-left: 1px dashed #444;
+        border-left: 1px dashed #666;
     }
 
     .time{
         width: 18vh;
         height:100vh;
-        border-left: 1px dashed #444;
+        border-left: 1px dashed #666;
     }    
     .space{
         width: 12vh;
@@ -403,7 +403,7 @@ h4, p, li{
     /* ESSAY */
     .essayheading{
         width: 100vw;
-        border: 1px solid #444;
+        border: 1px solid #666;
         box-sizing: border-box;
     }
     
@@ -462,7 +462,7 @@ h4, p, li{
     .explain{
         width: 100vw; 
         height: 200vw;
-        border-top: 1px dashed #444;
+        border-top: 1px dashed #666;
         display: inline-block;
     }
 
@@ -470,7 +470,7 @@ h4, p, li{
         height: 18vw;
         width: 100vw;
         padding: 0 12vw 0 12vw;
-        border-top: 1px dashed #444;
+        border-top: 1px dashed #666;
     }    
 
     .space{
