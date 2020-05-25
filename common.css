@@ -149,6 +149,7 @@ h1{
 }
 
 h2{
+    font-weight:600;
     font-size: 1.6em;
     line-height: 1.2em;
     color:#999;
