@@ -290,14 +290,14 @@ h4, p, li{
     
     #timelinetitle{
         width: 120vh;
-        height:100vh;
         z-index:-1;
         position:fixed;
         background-color:black;
     }
     
     #titleimg{
-        margin: 4vh 2vh 4vh 2vh;
+        height:84vh;
+        margin: 8vh 2vh 8vh 2vh;
     }
     
     #empty{
@@ -442,7 +442,6 @@ h4, p, li{
     
     #timelinetitle{
         width: 100vw;
-        height:96vw;
         z-index:-1;
         position:fixed;
         left:0;
@@ -450,13 +449,14 @@ h4, p, li{
     }
     
     #titleimg{
+        height:72vw;
         margin: 8vh 0 6vh 0 ;
     }
 
     #empty{
         left:0;
         width: 100vw;
-        height: 90vw;
+        height: 86vw;
     }
 
     .explain{
